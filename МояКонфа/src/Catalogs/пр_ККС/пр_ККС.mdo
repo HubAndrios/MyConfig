@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dcda3bc-9d2d-4992-a1e5-dda7bb0b35c1">
+  <producedTypes>
+    <objectType typeId="c6e5173e-546a-42ed-aa9a-d35846af97ef" valueTypeId="420d7b7a-f288-45c2-b0a2-f83a2e414a97"/>
+    <refType typeId="9537449a-100f-45cb-9fad-5cbe9e8e1b80" valueTypeId="bcb5d1a0-4c62-403e-8c54-fbc792e2175d"/>
+    <selectionType typeId="47bb8178-4a61-40a7-a095-d2ce972e88fd" valueTypeId="ad478635-4b5f-4851-a21b-67368ff52802"/>
+    <listType typeId="d661d52b-c123-4c49-9009-8c73320bfe69" valueTypeId="24aece1c-8289-43f2-9094-a5f988ed28bf"/>
+    <managerType typeId="14f18a07-1448-4435-8639-4c31111e310f" valueTypeId="c3d9dc71-03e0-466d-8f81-d5084d801cad"/>
+  </producedTypes>
+  <name>пр_ККС</name>
+  <synonym>
+    <key>ru</key>
+    <value>ККС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.пр_ККС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.пр_ККС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <dataHistory>Use</dataHistory>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>20</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.пр_ККС.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="62a67d12-b241-4844-87aa-138ddf7138b9">
+    <name>НПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>НПП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="25129f8b-3f95-4fb1-bea3-f487c2696e32">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

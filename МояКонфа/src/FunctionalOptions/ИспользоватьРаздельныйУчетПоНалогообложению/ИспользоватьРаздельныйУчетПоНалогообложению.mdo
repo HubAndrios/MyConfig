@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe2546d1-5dd7-4342-aec3-be9d40b6b827">
+  <name>ИспользоватьРаздельныйУчетПоНалогообложению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать раздельный учет по налогообложению</value>
+  </synonym>
+  <location>Constant.ИспользоватьРаздельныйУчетПоНалогообложению</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.Номенклатура.Attribute.ПодакцизныйТовар</content>
+  <content>Document.ЗаказПоставщику.Attribute.ЗакупкаПодДеятельность</content>
+  <content>Document.ПриобретениеУслугПрочихАктивов.Attribute.ЗакупкаПодДеятельность</content>
+  <content>ChartOfCharacteristicTypes.СтатьиРасходов.Attribute.ВариантРаздельногоУчетаНДС</content>
+  <content>Document.ПеремещениеТоваров.Attribute.ПеремещениеПодДеятельность</content>
+  <content>Document.КорректировкаВидаДеятельностиНДС</content>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.ВариантУчетаНДСПриИзмененииВидаДеятельности</content>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.СтатьяРасходовНеНДС</content>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.АналитикаРасходовНеНДС</content>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.СтатьяРасходовЕНВД</content>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.АналитикаРасходовЕНВД</content>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.ПрименяетсяУчетНДСПоФактическомуИспользованию</content>
+</mdclass:FunctionalOption>

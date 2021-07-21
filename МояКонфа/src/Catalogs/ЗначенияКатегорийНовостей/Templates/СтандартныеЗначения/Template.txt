@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+1. Значения классификаторов по-умолчанию готовятся в эталонной базе с помощью обработки "ВыгрузкаСтандартныхДанных".
+Результатом работы этой обработки будет создание во временном каталоге Windows файлов:
+Справочник.ЛентыНовостей.xml
+Справочник.ЗначенияКатегорийНовостей.xml
+ПланВидовХарактеристик.КатегорииНовостей.xml
+
+Содержимое каждого файла необходимо вставить в макет с именем СтандартныеЗначения в соответствующий объект метаданных
+
+-->
+
+<DefaultData xmlns:ncc="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!--Выгрузка ЗначенияКатегорийНовостей, 18.10.2017 9:45:21, Europe/Moscow-->
+	<!--
+	Начиная с 18.10.2017 лента новостей "Важные новости" становится обязательной для типовых конфигураций
+	  и загружается автоматически при обновлении конфигурации.
+	Соответственно все категории и значения категорий этой ленты новостей тоже станут обязательными и будут загружаться из макета
+	  сразу при обновлении конфигурации.
+	-->
+	<!-- Обязательные категории. Начало. -->
+	<ncc:CatalogObject.ЗначенияКатегорийНовостей xsi:type="ncc:CatalogObject.ЗначенияКатегорийНовостей">
+		<ncc:Ref>54cc6854-74ca-11e6-b358-001122987654</ncc:Ref>
+		<ncc:DeletionMark>false</ncc:DeletionMark>
+		<ncc:Owner xsi:type="ncc:ChartOfCharacteristicTypesRef.КатегорииНовостей">0f62fdba-b213-11e6-ac82-0050569f2f4f</ncc:Owner>
+		<ncc:Parent>00000000-0000-0000-0000-000000000000</ncc:Parent>
+		<ncc:Code>Admin</ncc:Code>
+		<ncc:Description>Администратор</ncc:Description>
+	</ncc:CatalogObject.ЗначенияКатегорийНовостей>
+	<ncc:CatalogObject.ЗначенияКатегорийНовостей xsi:type="ncc:CatalogObject.ЗначенияКатегорийНовостей">
+		<ncc:Ref>54cc6855-74ca-11e6-b358-001122987654</ncc:Ref>
+		<ncc:DeletionMark>false</ncc:DeletionMark>
+		<ncc:Owner xsi:type="ncc:ChartOfCharacteristicTypesRef.КатегорииНовостей">0f62fdba-b213-11e6-ac82-0050569f2f4f</ncc:Owner>
+		<ncc:Parent>00000000-0000-0000-0000-000000000000</ncc:Parent>
+		<ncc:Code>User</ncc:Code>
+		<ncc:Description>Пользователь</ncc:Description>
+	</ncc:CatalogObject.ЗначенияКатегорийНовостей>
+	<!-- Обязательные категории. Конец. -->
+
+
+</DefaultData>

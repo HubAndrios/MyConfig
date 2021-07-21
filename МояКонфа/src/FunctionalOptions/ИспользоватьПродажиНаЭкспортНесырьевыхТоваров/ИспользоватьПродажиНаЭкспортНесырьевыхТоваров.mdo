@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57409842-236f-4af4-8400-4ec1a4c9a238">
+  <name>ИспользоватьПродажиНаЭкспортНесырьевыхТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать продажи на экспорт несырьевых товаров</value>
+  </synonym>
+  <location>Constant.ИспользоватьПродажиНаЭкспортНесырьевыхТоваров</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

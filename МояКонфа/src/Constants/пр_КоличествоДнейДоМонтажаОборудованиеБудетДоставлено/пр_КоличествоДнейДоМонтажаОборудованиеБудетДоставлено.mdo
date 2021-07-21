@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db8b51c9-5e68-4b7a-8e3f-39514d54581c">
+  <producedTypes>
+    <managerType typeId="6e730f16-8462-4e17-913d-58009e1c1dbd" valueTypeId="2381762a-5e00-49e7-8ac8-7466dd2340cc"/>
+    <valueManagerType typeId="52b86f61-b855-494e-8095-ff7877bcd854" valueTypeId="aa176d82-fb0b-4227-8430-087c7139f460"/>
+    <valueKeyType typeId="7d90484b-f198-489b-ab1a-13539c050981" valueTypeId="95afc874-b9bb-421f-979c-42300b5b46f7"/>
+  </producedTypes>
+  <name>пр_КоличествоДнейДоМонтажаОборудованиеБудетДоставлено</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество дней до монтажа оборудование будет доставлено</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

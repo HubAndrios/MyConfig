@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24220baa-7e6a-41c5-b99d-8c0a3a347d6a">
+  <name>ИспользоватьЛизинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать лизинг</value>
+  </synonym>
+  <location>Constant.ИспользоватьЛизинг</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.УчетныеПолитикиОрганизаций.Attribute.СхемаУчетаСтоимостиОСвНУ</content>
+</mdclass:FunctionalOption>

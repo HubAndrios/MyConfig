@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec9b377f-18c5-4886-9789-24ac60ef0e63">
+  <producedTypes>
+    <objectType typeId="85375bea-4c1e-4547-89e8-32fa38b28c81" valueTypeId="41262a9a-8b28-44ac-ba46-339a7d365e43"/>
+    <managerType typeId="bbf46444-3ef0-4e97-8e19-a825d4924948" valueTypeId="8b8cdd0f-f2d3-41cc-aaf6-9b6889aa8119"/>
+  </producedTypes>
+  <name>пр_МониторингГотовностиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг готовности оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.пр_МониторингГотовностиОборудования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="0b5b9962-31d2-4299-9f7c-13857c9c0c92">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

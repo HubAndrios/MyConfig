@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a92e41da-080c-49ab-bc2f-820fec30b233">
+  <name>ВестиСведенияДляДекларацийПоАлкогольнойПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вести сведения для деклараций по алкогольной продукции</value>
+  </synonym>
+  <location>Constant.ВестиСведенияДляДекларацийПоАлкогольнойПродукции</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ВидыАлкогольнойПродукции</content>
+  <content>Catalog.КлассификаторАлкогольнойПродукцииЕГАИС</content>
+  <content>Catalog.КлассификаторОрганизацийЕГАИС</content>
+  <content>InformationRegister.ПротоколОбменаЕГАИС</content>
+  <content>Document.ТТНВходящаяЕГАИС</content>
+  <content>InformationRegister.НастройкиОбменаЕГАИС</content>
+  <content>Catalog.Справки1ЕГАИС</content>
+  <content>Catalog.Справки2ЕГАИС</content>
+  <content>Document.АктПостановкиНаБалансЕГАИС</content>
+  <content>Document.АктСписанияЕГАИС</content>
+  <content>Document.ТТНИсходящаяЕГАИС</content>
+  <content>Document.ОстаткиЕГАИС</content>
+  <content>Document.ПередачаВРегистр2ЕГАИС</content>
+  <content>Document.ВозвратИзРегистра2ЕГАИС</content>
+  <content>CommonCommand.ОстаткиАлкогольнойПродукцииЕГАИС</content>
+  <content>CommonCommand.ПротоколОбменаЕГАИС</content>
+  <content>Catalog.Номенклатура.Attribute.ОсобенностьУчета</content>
+</mdclass:FunctionalOption>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c68e17c4-75ff-41f0-8775-8a6cae6b584e">
+  <producedTypes>
+    <selectionType typeId="1061d4b1-6508-43a7-8854-b36f970cefa8" valueTypeId="753f2d5b-27cc-4778-9559-644e965cdfb8"/>
+    <listType typeId="aa4a9c8c-fbcd-47de-93e0-3bf458a36c25" valueTypeId="ada8301f-7689-4eec-97c0-6a70df917fe0"/>
+    <managerType typeId="6eab2422-9d04-4507-859a-520918c51166" valueTypeId="1dfee47c-c213-47a3-a6d5-c664d348a4f9"/>
+  </producedTypes>
+  <name>пр_АктыВК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акты входного контроля</value>
+  </synonym>
+  <defaultForm>DocumentJournal.пр_АктыВК.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.пр_АктВК</registeredDocuments>
+  <columns uuid="1f32fe0f-2d52-4d2b-9ae3-a5b2db9cb03a">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <references>Document.пр_АктВК.Attribute.Состояние</references>
+  </columns>
+  <columns uuid="40fec521-4962-467b-8cf1-cb1fdbeadac8">
+    <name>Куратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Куратор</value>
+    </synonym>
+    <references>Document.пр_АктВК.Attribute.ОтветственныйОВК</references>
+  </columns>
+  <columns uuid="08534abb-4141-4ca4-b8be-6c2af6098633">
+    <name>РегистрационныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер</value>
+    </synonym>
+    <references>Document.пр_АктВК.Attribute.РегистрационныйНомер</references>
+  </columns>
+  <forms uuid="5f40cdc0-a342-42e6-a98e-ea9c20fcd79a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

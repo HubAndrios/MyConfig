@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b6d734d-23f1-4a0c-bd4c-2dd5b97fd2bf">
+  <producedTypes>
+    <containerType typeId="2f4f9f39-bd19-4aa5-9723-48f0befda61c" valueTypeId="68dfd5c7-89a8-4597-b2f4-690b404585f2"/>
+  </producedTypes>
+  <name>пр_ТипыДокументовПроцесса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы документов процесса</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.пр_Лот</types>
+    <types>DocumentRef.пр_Согласование</types>
+    <types>DocumentRef.пр_ТУТЗ</types>
+    <types>DocumentRef.пр_ПередачаВмонтаж</types>
+    <types>DocumentRef.пр_ЗаявкаВТАЕК</types>
+    <types>DocumentRef.пр_Логистика</types>
+    <types>DocumentRef.пр_Договор</types>
+    <types>DocumentRef.пр_АктВК</types>
+  </type>
+</mdclass:DefinedType>

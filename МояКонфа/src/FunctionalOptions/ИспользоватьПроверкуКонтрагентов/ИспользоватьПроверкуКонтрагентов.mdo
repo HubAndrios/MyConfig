@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d014d8c-8dcb-422a-acec-9d0dc9da3582">
+  <name>ИспользоватьПроверкуКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать проверку контрагентов</value>
+  </synonym>
+  <location>Constant.ИспользоватьПроверкуКонтрагентов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.СостоянияКонтрагентов</content>
+  <content>Report.ПроблемыПроверкиКонтрагентов</content>
+</mdclass:FunctionalOption>

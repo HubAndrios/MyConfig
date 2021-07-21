@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba5d9393-6a49-49ab-b438-0b1158f2eee0">
+  <producedTypes>
+    <objectType typeId="b1377163-6ddc-4141-a5ab-7da3e1b2268f" valueTypeId="b903ade1-845f-4670-b07a-57a9ac1c6e19"/>
+    <managerType typeId="cf2a3a3d-6a64-4773-b9ef-7c7ffa302619" valueTypeId="bcd64ac6-117f-4d72-aacb-e17977fda230"/>
+  </producedTypes>
+  <name>ОбменСБанками</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не используется) Обмен электронными документами с банком</value>
+  </synonym>
+  <comment>Обмен электронными документами с банком</comment>
+  <attributes uuid="7dbf4762-7634-449d-ab28-782d7a68e186">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Организация</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1216713f-edad-4a5e-8187-f6a25568f418">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СправочникБанки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c89985da-ee7a-4198-a4a5-84177f232697">
+    <name>НастройкаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка обмена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НастройкиОбменСБанками</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Соглашение об обмене с банком</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6f257e8f-60db-413b-93a0-6c23d81a0f80">
+    <name>ВыборПериодаСбербанк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор периода сбербанк</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="87c37e3a-39fe-4261-ab47-5bd56f00bddc">
+    <name>ВыборСертификатаДляДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор сертификата для добавления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f0008b24-71d3-49ae-9aec-61a5debba3e5">
+    <name>ВыборХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор хранилища</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05fc7bb9-63f4-4014-92fe-8b77e9d561c4">
+    <name>ЗапросPINКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос PIN кода</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="38c2f3e5-e7a0-4b54-bc0a-bc7faad779f2">
+    <name>ЗапросВБанк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос в банк</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b3ef66a4-cadf-4948-86db-c04fb4e36fac">
+    <name>ЗапросОдноразовогоПароля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос одноразового пароля</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a0b061a9-06a7-4536-8667-046781b69564">
+    <name>ЗапросПароляКСертификату</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос пароля к сертификату</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9adbcead-5c1f-4e9c-9cbe-427dec4f32cb">
+    <name>ЗапросПинКодаСбербанк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос пин кода</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fdb795e2-c5f0-43e9-9bde-0e176611739e">
+    <name>ОжиданиеПодключенияЭлектронногоКлюча</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание подключения электронного ключа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="93948ac8-ad3a-4cfe-816a-a45938d13e55">
+    <name>ОжиданиеПодписиСбербанк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание подписи сбербанк</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e787530a-785b-41ec-ade3-4c720d6078b6">
+    <name>ПодтверждениеПлатежныхПорученийПоSMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение платежных поручений по SMS</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26cdd503-876f-45c2-afc6-081a827d24a5">
+    <name>СписокЭД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронные документы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="85a8f138-2777-4f02-aede-91d489e56681">
+    <name>СписокЭлектронныхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список электронных документов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cd83a8e9-3687-4f44-968a-c1d61d8891e2">
+    <name>SBRFServiceProxy</name>
+    <synonym>
+      <key>ru</key>
+      <value>SBRFServiceProxy</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="fa8a2402-3de9-4e21-a2e1-53544ed1b2db">
+    <name>ПлатежноеПоручение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное поручение</value>
+    </synonym>
+  </templates>
+  <templates uuid="d5b60790-904c-4550-87a2-49456fd5ba07">
+    <name>ПлатежноеТребование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное требование</value>
+    </synonym>
+  </templates>
+  <templates uuid="2bc85dba-9efb-43b8-b6d4-410bad82a788">
+    <name>Схема201</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема201</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="af41cc9b-596b-49c2-a4d3-e26c42b07619">
+    <name>Схема202</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема202</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="407e956e-a3f8-4b06-8858-e12554f73edc">
+    <name>Схема203</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема203</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="2cdb64a8-a1ee-4361-8035-8a99bdaf701b">
+    <name>Схема211</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема DirectBank (версия 2.1.1)</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="ca680c44-0ae2-4819-9569-5cd113713a45">
+    <name>Разобрать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разобрать</value>
+    </synonym>
+    <group>FormNavigationPanelImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.СообщениеОбменСБанками</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Разобрать выписку</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ReadChanges</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="352a4e40-4be1-497a-a870-dc34eb78bbd5">
+    <name>СписокЭД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть электронные документы</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.НастройкиОбменСБанками</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Список электронных документов по документу ИБ</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.Подсистема</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="fdd59918-2a5a-4d92-bdf3-602a819eebea">
+    <name>СинхронизироватьСБанком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизировать с банком</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.СинхронизацияДанных</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="3f84972e-b671-45d9-b30c-4d98c09dde6c">
+    <name>ПечатьЭД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать электронного документа</value>
+    </synonym>
+    <group>CommandGroup.Печать</group>
+    <commandParameterType>
+      <types>DocumentRef.СообщениеОбменСБанками</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

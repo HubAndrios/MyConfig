@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d27c3fed-a064-4fef-b6c4-5f287ea8e39a">
+  <name>ИспользоватьПродажиНаЭкспортСырьевыхТоваровУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать продажи на экспорт сырьевых товаров, услуг</value>
+  </synonym>
+  <location>Constant.ИспользоватьПродажиНаЭкспортСырьевыхТоваровУслуг</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ВидыНоменклатуры.Attribute.СырьевойТовар</content>
+  <content>Catalog.Номенклатура.Attribute.СырьевойТовар</content>
+</mdclass:FunctionalOption>

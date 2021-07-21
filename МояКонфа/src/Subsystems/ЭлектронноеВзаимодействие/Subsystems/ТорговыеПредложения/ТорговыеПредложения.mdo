@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b98ab2a-9241-4f81-ad88-d46789fc577f">
+  <name>ТорговыеПредложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговые предложения</value>
+  </synonym>
+  <content>InformationRegister.СоответствиеВидовНоменклатуры1СБизнесСеть</content>
+  <content>InformationRegister.СоответствиеРеквизитовНоменклатуры1СБизнесСеть</content>
+  <content>InformationRegister.СоответствиеЗначенийРеквизитов1СБизнесСеть</content>
+  <content>DataProcessor.ТорговыеПредложения</content>
+  <content>Enum.ДействияСинхронизацииТорговыеПредложения</content>
+  <content>XDTOPackage.ТорговыеПредложения1СБизнесСеть</content>
+  <content>ScheduledJob.СинхронизацияТорговыхПредложений</content>
+  <content>InformationRegister.СостоянияСинхронизацииТорговыеПредложения</content>
+  <content>DefinedType.ТорговоеПредложение</content>
+  <content>CommonPicture.СтатусСинхронизацииТорговыеПредложения</content>
+  <content>Enum.СостоянияСинхронизацииТорговыеПредложения</content>
+  <content>CommonCommand.ТорговыеПредложения1СБизнесСеть</content>
+  <content>Role.СопоставлениеНоменклатуры1СБизнесСеть</content>
+  <content>CommonModule.ТорговыеПредложения</content>
+  <content>CommonModule.ТорговыеПредложенияВызовСервера</content>
+  <content>CommonModule.ТорговыеПредложенияКлиент</content>
+  <content>CommonModule.ТорговыеПредложенияПереопределяемый</content>
+  <content>CommonPicture.НавигацияДомойБЭД</content>
+  <content>DefinedType.ВидыНоменклатурыБЭД</content>
+  <content>DefinedType.ДополнительныеРеквизитыБЭД</content>
+  <content>CommonModule.ТорговыеПредложенияКлиентПереопределяемый</content>
+  <content>DefinedType.ВидыЗначенийРеквизитов1СБизнесСеть</content>
+  <content>Report.ПубликуемыеТорговыеПредложения</content>
+  <content>Role.ОтчетыТорговыеПредложения</content>
+  <content>CommonCommand.ПубликацияТорговыхПредложений</content>
+  <parentSubsystem>Subsystem.ЭлектронноеВзаимодействие</parentSubsystem>
+</mdclass:Subsystem>

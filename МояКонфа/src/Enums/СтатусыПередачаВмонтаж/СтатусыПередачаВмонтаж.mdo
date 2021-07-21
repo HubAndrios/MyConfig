@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b0f9d99-159d-4c15-a8ed-d638a936d613">
+  <producedTypes>
+    <refType typeId="6a24627d-d48a-4e0d-89f0-8af81f620cb4" valueTypeId="138b7812-d233-423c-b523-f3f033fb4620"/>
+    <listType typeId="1e4c5d4c-afde-44db-91ba-87400d0cad95" valueTypeId="53b11150-5723-4684-ba53-3e35878655b6"/>
+    <managerType typeId="e3cc0534-40f2-4c7a-8072-6f716a59f886" valueTypeId="77fa9c32-9594-4229-adb8-39ad271fe0b0"/>
+  </producedTypes>
+  <name>СтатусыПередачаВмонтаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы передача вмонтаж</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="075a817f-7ea7-4b76-bab0-5ba5660cc6c0">
+    <name>НеСогласован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не согласован</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="db28f072-c936-4570-8b56-cdc448608e7f">
+    <name>Согласован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласован</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="df5c0553-1006-49ec-9856-52d380ff53c1">
+    <name>СогласованСзамечаниями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласован сзамечаниями</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

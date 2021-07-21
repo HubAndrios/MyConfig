@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d4363eb-f93a-4315-945b-0f3fca500839">
+  <producedTypes>
+    <objectType typeId="e14456aa-1757-4532-9f9f-255e3d7d49ee" valueTypeId="30e86e89-273c-4daa-bdb7-5fe050e7c58d"/>
+    <managerType typeId="aa831a34-9f65-4c5e-8782-0e9a0a768108" valueTypeId="a7f88514-d1f1-4244-b7ff-a6879a15c1f9"/>
+  </producedTypes>
+  <name>СопоставлениеКлассификаторовЕГАИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сопоставление классификаторов ЕГАИС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="0fbf7db6-fdba-4155-972f-99995aeaedad">
+    <name>СопоставлениеАлкогольнойПродукцииЕГАИСНоменклатурой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сопоставление алкогольной продукции ЕГАИС с номенклатурой</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a4bf50e4-cdac-4abd-b955-fdf4676a84c9">
+    <name>СопоставлениеНоменклатурыСАлкогольнойПродукциейЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сопоставление номенклатуры с алкогольной продукцией ЕГАИС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

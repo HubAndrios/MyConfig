@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="963093e2-aaa6-4746-b3b4-f5f48fe590ab">
+  <producedTypes>
+    <selectionType typeId="722b09e3-75ba-4b05-b5f4-111f3521419b" valueTypeId="c4461b25-e435-4ecc-9002-896227929c49"/>
+    <listType typeId="0dee6376-42f9-42ff-8a9d-e9f46fe38640" valueTypeId="4ad0c9e0-01ec-461b-8ba1-915ca7241ce7"/>
+    <managerType typeId="746c5544-ebf5-40e2-b45d-8d49d6c54a58" valueTypeId="83bf8d3e-1a08-4b57-a4aa-c8b9c394fb31"/>
+  </producedTypes>
+  <name>пр_ЗаявкиВТАЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки в ТАЕК</value>
+  </synonym>
+  <defaultForm>DocumentJournal.пр_ЗаявкиВТАЕК.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.пр_ЗаявкаВТАЕК</registeredDocuments>
+  <columns uuid="92c7bc9a-cf54-4ce6-9c43-44f51cf88bcb">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <references>Document.пр_ЗаявкаВТАЕК.Attribute.Состояние</references>
+  </columns>
+  <columns uuid="50347ec0-024c-4f92-9308-6239dce55079">
+    <name>Куратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Куратор</value>
+    </synonym>
+    <references>Document.пр_ЗаявкаВТАЕК.Attribute.Куратор</references>
+  </columns>
+  <columns uuid="02790ce1-0f57-4d89-8fae-d2daea47a2f8">
+    <name>ДатаОтветаКонтрольная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ответа контрольная</value>
+    </synonym>
+    <references>Document.пр_ЗаявкаВТАЕК.Attribute.ДатаОтветаКонтрольная</references>
+  </columns>
+  <columns uuid="5add3caf-9fc1-41ed-9cef-9822309a5fb7">
+    <name>ДатаОтветаФактическая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ответа фактическая</value>
+    </synonym>
+    <references>Document.пр_ЗаявкаВТАЕК.Attribute.ДатаОтветаФактическая</references>
+  </columns>
+  <columns uuid="0404d892-1449-4cc3-9a74-ec159d3b6fec">
+    <name>СтатусЗДИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус ЗДИ</value>
+    </synonym>
+    <references>Document.пр_ЗаявкаВТАЕК.Attribute.СтатусЗДИ</references>
+  </columns>
+  <forms uuid="bd905f6c-c805-44c0-ae81-b78af9fcea45">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

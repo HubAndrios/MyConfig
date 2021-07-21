@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07df4c38-c810-4fce-b3db-205502b5ff9c">
+  <producedTypes>
+    <selectionType typeId="acd280f0-3f51-4129-b887-f880e2ad4be0" valueTypeId="820436c7-4b6f-4ba0-80ed-f62f99fee0dc"/>
+    <listType typeId="07aa9ba7-0387-423b-8389-ce9ea6055078" valueTypeId="fdfd975e-e836-4d62-b395-f7965d6919b9"/>
+    <managerType typeId="7feda279-2b57-4187-a36b-24ad35f61c36" valueTypeId="6b41d032-522f-4273-b7e7-a960ab50b2ed"/>
+  </producedTypes>
+  <name>пр_Согласования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласования</value>
+  </synonym>
+  <defaultForm>DocumentJournal.пр_Согласования.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.пр_Согласование</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="e7badaef-27f6-4271-8295-ee329b99617f">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <references>Document.пр_Согласование.Attribute.Состояние</references>
+  </columns>
+  <columns uuid="254a109a-9d26-4268-b3a3-042817d53147">
+    <name>Куратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Куратор</value>
+    </synonym>
+    <references>Document.пр_Согласование.Attribute.Куратор</references>
+  </columns>
+  <columns uuid="18839380-483d-4fb6-b7db-8b464939376d">
+    <name>ДатаОтветаКонтрольная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ответа контрольная</value>
+    </synonym>
+    <references>Document.пр_Согласование.Attribute.ДатаОтветаКонтрольная</references>
+  </columns>
+  <columns uuid="251876b1-5123-46c9-aa8d-f84614589cd8">
+    <name>ДатаОтветаФактическая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ответа фактическая</value>
+    </synonym>
+    <references>Document.пр_Согласование.Attribute.ДатаОтветаФактическая</references>
+  </columns>
+  <columns uuid="ed78c2dc-980e-4957-b442-06b52991c6ca">
+    <name>СтатусЗДИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус ЗДИ</value>
+    </synonym>
+    <references>Document.пр_Согласование.Attribute.СтатусЗДИ</references>
+  </columns>
+  <forms uuid="948fb8e8-9f43-4ba1-b3a5-add5b06b2ea4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

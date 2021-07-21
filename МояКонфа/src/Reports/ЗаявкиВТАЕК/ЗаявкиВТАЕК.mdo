@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95622318-b734-4761-b38a-9a6cd9278cde">
+  <producedTypes>
+    <objectType typeId="6a325ecf-e0fe-412f-87ce-8af54ce454d1" valueTypeId="89eea250-ccd6-4282-9b32-2f5806dfaae0"/>
+    <managerType typeId="af8b8175-7e59-4cad-8271-84c5e972580f" valueTypeId="c83daf8f-6d63-44cb-86fb-51d6781a5524"/>
+  </producedTypes>
+  <name>ЗаявкиВТАЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки ВТАЕК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗаявкиВТАЕК.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f33acdad-b678-42f0-8df6-1b7491b6631d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

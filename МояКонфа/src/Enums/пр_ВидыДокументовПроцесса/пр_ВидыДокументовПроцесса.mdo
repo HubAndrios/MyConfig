@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d7c2eee-4972-41b0-9e1f-90a2c418a947">
+  <producedTypes>
+    <refType typeId="194bebe5-e818-487e-8b73-4c07af877b94" valueTypeId="afe67fb9-fe15-4049-b944-136978de7bb5"/>
+    <listType typeId="50f19d91-96c4-4c86-88dc-b3682f0d94da" valueTypeId="f13807fb-073a-43b3-be8a-9a8ac1c77063"/>
+    <managerType typeId="58cf534e-51ba-4ab0-955a-6b0f5aff3f7d" valueTypeId="8e5ec54a-2996-4045-bcd8-670c1d66e596"/>
+  </producedTypes>
+  <name>пр_ВидыДокументовПроцесса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды документов процесса</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f654c429-1bf4-423a-8abd-3a47bb83d931">
+    <name>пр_Лот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лот</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="59b73566-2e09-40be-985a-fef54249bc98">
+    <name>пр_ЗаявкаВТАЕК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка в ТАЕК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="58b428d4-a603-4ea2-9e94-0843d3f77a67">
+    <name>пр_Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="507a4b16-2928-4ac8-a064-fe1391e4e91c">
+    <name>пр_АктВК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт ВК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="89320317-5e0a-4a3b-a1f4-d9ed4cbab08f">
+    <name>пр_Логистика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логистика</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5d3f039c-1327-44ed-b6c5-cb252c88348f">
+    <name>пр_ТУТЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТУТЗ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f5863879-9abd-46b2-be9c-7dbc0acd65a8">
+    <name>пр_Согласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6b6e59d6-b1d1-49d8-a25f-5269005218d1">
+    <name>пр_ПередачаВмонтаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача в монтаж</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ccde133-cdca-44ca-b51a-313a91b0cf36">
+  <producedTypes>
+    <refType typeId="4a1cc3be-ebd9-4045-88e0-bdda0d5abc51" valueTypeId="0d28b7aa-33bc-453a-93be-b14dd32b1d9e"/>
+    <listType typeId="a5d6cc58-b562-43a1-8c99-c13183d4e488" valueTypeId="d6301510-f341-4e4d-996d-dc57dad6c5ba"/>
+    <managerType typeId="d0cde876-04c9-4f3a-9af9-9c02e02b43b6" valueTypeId="4f452003-857d-41a4-a140-646382f70b9c"/>
+  </producedTypes>
+  <name>ВидыАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды актов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b8cdde17-5c28-4782-95a8-bf885923bf20">
+    <name>Первичный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="98b33a1f-42fe-4622-b907-c06ec6b1b3d3">
+    <name>Дополнительный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

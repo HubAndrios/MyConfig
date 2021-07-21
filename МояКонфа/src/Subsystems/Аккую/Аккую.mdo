@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f7064be-2ad2-4983-ac78-a398af55e4d4">
+  <name>Аккую</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аккую</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.пр_ЛоготипАккуюСерый</picture>
+  </picture>
+  <content>InformationRegister.пр_СостояниеОборудования</content>
+  <content>Enum.СостояниеОборудования</content>
+  <content>DataProcessor.пр_ИмпортИзSPFоборудования</content>
+  <content>Catalog.Номенклатура</content>
+  <content>DocumentJournal.пр_Лоты</content>
+  <content>DataProcessor.пр_ИмпортЗаявокВТАЕК</content>
+  <content>DocumentJournal.пр_ЗаявкиВТАЕК</content>
+  <content>DocumentJournal.пр_АктыВК</content>
+  <content>DataProcessor.пр_ИмпортАктовВК</content>
+  <content>DocumentJournal.пр_Логистика</content>
+  <content>DocumentJournal.пр_ТУТЗ</content>
+  <content>DocumentJournal.пр_Согласования</content>
+  <content>DocumentJournal.пр_ПередачиВМонтаж</content>
+  <content>Report.пр_МониторингГотовностиОборудования</content>
+  <content>Document.пр_ДетализированныйГрафикПроекта</content>
+  <content>Catalog.пр_РаботыПроектаСооружений</content>
+  <content>Catalog.пр_ККС</content>
+  <content>CommonPicture.пр_ЛоготипАккую</content>
+  <content>DocumentJournal.пр_Договоры</content>
+  <content>Report.пр_ОтчетПоККС</content>
+  <content>Report.пр_МониторингРаботПоДатам</content>
+  <content>DataProcessor.пр_ИмпортСогласований</content>
+  <content>DataProcessor.пр_ИмпортПередачаВМонтаж</content>
+  <subsystems>пр_Журналы</subsystems>
+  <subsystems>пр_Справочники</subsystems>
+</mdclass:Subsystem>

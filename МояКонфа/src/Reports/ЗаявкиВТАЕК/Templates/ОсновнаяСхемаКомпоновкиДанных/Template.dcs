@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеОборудования</dataPath>
+			<field>НаименованиеОборудования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерБлока</dataPath>
+			<field>НомерБлока</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодОборудования</dataPath>
+			<field>КодОборудования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Извещение_РеквизитыПисьма</dataPath>
+			<field>Извещение_РеквизитыПисьма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусЗДИ</dataPath>
+			<field>СтатусЗДИ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Договора</dataPath>
+			<field>Договора</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОбращения</dataPath>
+			<field>ДатаОбращения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Извещение_ОтветНаЗамечаниеТАЕК</dataPath>
+			<field>Извещение_ОтветНаЗамечаниеТАЕК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОтветаФактическая</dataPath>
+			<field>ДатаОтветаФактическая</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Куратор</dataPath>
+			<field>Куратор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОтправки</dataPath>
+			<field>ДатаОтправки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОтветаКонтрольная</dataPath>
+			<field>ДатаОтветаКонтрольная</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Извещение_ЗамечаниеТАЕК</dataPath>
+			<field>Извещение_ЗамечаниеТАЕК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПланыИнспекций_РеквизитыПисьмаИнспекций</dataPath>
+			<field>ПланыИнспекций_РеквизитыПисьмаИнспекций</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Извещение_СтатусЗаявки</dataPath>
+			<field>Извещение_СтатусЗаявки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Извещение_Коплектность</dataPath>
+			<field>Извещение_Коплектность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РешениеТАЕК_РеквизитыПисьма</dataPath>
+			<field>РешениеТАЕК_РеквизитыПисьма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РешениеТАЕК_СтатусРешения</dataPath>
+			<field>РешениеТАЕК_СтатусРешения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Примечание</dataPath>
+			<field>Примечание</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаявкаВТАЕК.Ссылка КАК Ссылка,
+	ЗаявкаВТАЕК.Номер КАК Номер,
+	ЗаявкаВТАЕК.ДатаОбращения КАК ДатаОбращения,
+	ЗаявкаВТАЕК.Куратор КАК Куратор,
+	ЗаявкаВТАЕК.ДатаОтправки КАК ДатаОтправки,
+	ЗаявкаВТАЕК.ДатаОтветаКонтрольная КАК ДатаОтветаКонтрольная,
+	ЗаявкаВТАЕК.ДатаОтветаФактическая КАК ДатаОтветаФактическая,
+	ЗаявкаВТАЕК.СтатусЗДИ КАК СтатусЗДИ,
+	ЗаявкаВТАЕК.Извещение_РеквизитыПисьма КАК Извещение_РеквизитыПисьма,
+	ЗаявкаВТАЕК.Извещение_ЗамечаниеТАЕК КАК Извещение_ЗамечаниеТАЕК,
+	ЗаявкаВТАЕК.Извещение_ОтветНаЗамечаниеТАЕК КАК Извещение_ОтветНаЗамечаниеТАЕК,
+	ЗаявкаВТАЕК.Извещение_СтатусЗаявки КАК Извещение_СтатусЗаявки,
+	ЗаявкаВТАЕК.Извещение_Коплектность КАК Извещение_Коплектность,
+	ЗаявкаВТАЕК.РешениеТАЕК_РеквизитыПисьма КАК РешениеТАЕК_РеквизитыПисьма,
+	ЗаявкаВТАЕК.РешениеТАЕК_СтатусРешения КАК РешениеТАЕК_СтатусРешения,
+	ЗаявкаВТАЕК.ПланыИнспекций_РеквизитыПисьмаИнспекций КАК ПланыИнспекций_РеквизитыПисьмаИнспекций,
+	ЗаявкаВТАЕК.Примечание КАК Примечание,
+	ЗаявкаВТАЕК.Договора КАК Договора,
+	ЗаявкаВТАЕКТовары.НомерБлока КАК НомерБлока,
+	ЗаявкаВТАЕКТовары.КодОборудования КАК КодОборудования,
+	ЗаявкаВТАЕКТовары.Наименование КАК НаименованиеОборудования
+ИЗ
+	Документ.пр_ЗаявкаВТАЕК2.Товары КАК ЗаявкаВТАЕКТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.пр_ЗаявкаВТАЕК2 КАК ЗаявкаВТАЕК
+		ПО ЗаявкаВТАЕКТовары.Ссылка = ЗаявкаВТАЕК.Ссылка</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОбращения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Куратор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОтправки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОтветаКонтрольная</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОтветаФактическая</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатусЗДИ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Извещение_РеквизитыПисьма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Извещение_ЗамечаниеТАЕК</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Извещение_ОтветНаЗамечаниеТАЕК</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Извещение_СтатусЗаявки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Извещение_Коплектность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РешениеТАЕК_РеквизитыПисьма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РешениеТАЕК_СтатусРешения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПланыИнспекций_РеквизитыПисьмаИнспекций</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Примечание</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Договора</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

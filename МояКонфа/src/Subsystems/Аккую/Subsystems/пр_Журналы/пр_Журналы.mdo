@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fcc4d0c-c830-416c-b347-1a8da36b4c4d">
+  <name>пр_Журналы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журналы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DocumentJournal.пр_Лоты</content>
+  <content>DocumentJournal.пр_ЗаявкиВТАЕК</content>
+  <content>DocumentJournal.пр_АктыВК</content>
+  <content>DocumentJournal.пр_Логистика</content>
+  <content>DocumentJournal.пр_ТУТЗ</content>
+  <content>DocumentJournal.пр_Согласования</content>
+  <content>DocumentJournal.пр_ПередачиВМонтаж</content>
+  <content>DocumentJournal.пр_Договоры</content>
+  <parentSubsystem>Subsystem.Аккую</parentSubsystem>
+</mdclass:Subsystem>

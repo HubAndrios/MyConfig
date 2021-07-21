@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f80b49ea-6b49-4628-a2a1-34dac28796d8">
+  <producedTypes>
+    <selectionType typeId="bd8ffef7-68f2-4142-bf67-c7cc966f1111" valueTypeId="64e3e5ec-4836-4207-8bd9-16e640b68df9"/>
+    <listType typeId="127b9d2d-8b23-4f18-9149-7badb09d86c9" valueTypeId="c5c54ef5-bc13-4dca-918e-b2b5e8e94576"/>
+    <managerType typeId="71b04b18-d1b3-4f4d-a116-b5021ace336d" valueTypeId="d6e9a07f-c366-45a9-9f9c-72f24e345dba"/>
+    <recordSetType typeId="bfde7543-98d7-4a1c-b002-6f7a7bf434ff" valueTypeId="eb0ad34f-6a3f-4a8f-a4ab-ca1489a79512"/>
+    <recordKeyType typeId="a02dc931-9ff0-4e24-a540-ae6b41ddd899" valueTypeId="a8133182-6bcc-4f94-8cbd-cd690646632a"/>
+    <recordType typeId="471d7153-4aab-40c7-883d-b0acf9b1533d" valueTypeId="6147326f-e4c1-44f0-b102-0b127b6740a3"/>
+    <recordManagerType typeId="4575cda2-ca26-4950-9438-b74f440e3684" valueTypeId="5750f64c-0a98-44e8-956b-b31673d7a37a"/>
+  </producedTypes>
+  <name>пр_ПоследовательностьПроцессныхСтатусов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последовательность процессных статусов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="85d67bff-36d6-48b9-bcc4-0b6260b132bd">
+    <name>Последовательность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последовательность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1657eecd-9332-4be5-8558-9c77a4d3ed79">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.пр_ВидыДокументовПроцесса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="44cc7036-74ee-40cd-8ba9-0f4923a64cd5">
+    <name>СтатусОК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус ОК</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЛота</types>
+      <types>EnumRef.СтатусыСогласований</types>
+      <types>EnumRef.СтатусыДоговора</types>
+      <types>EnumRef.СтатусыЗаявкиТАЕК</types>
+      <types>EnumRef.СтатусыПередачаВмонтаж</types>
+      <types>EnumRef.СтатусыТУТЗ</types>
+      <types>String</types>
+      <types>EnumRef.СтатусыАктаВК</types>
+      <types>EnumRef.СтатусыЛогистики</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3be77561-2a2d-4ce3-a5d2-1ef37b69eccf">
+  <producedTypes>
+    <objectType typeId="5bd68910-ea4c-4b07-b0f4-a5d89c4e11b8" valueTypeId="ccf323c1-e5c5-4006-bd6e-f34e947311e6"/>
+    <refType typeId="f2b32a0d-0629-4913-ab48-d69c1fd4af35" valueTypeId="d980b4b8-b94d-4130-b4d4-750b2d1a5cbc"/>
+    <selectionType typeId="616789e7-0c4a-4f4c-9205-bfadcc328501" valueTypeId="e350993f-6a70-4f63-a304-14caac02d5f5"/>
+    <listType typeId="1be8229d-c1f6-4a74-9df2-34c8704e4339" valueTypeId="6fdd9df6-5799-4e75-beec-f5f2a6fe83ed"/>
+    <managerType typeId="0ba8a0fc-a45c-43b7-a848-9b03a4280437" valueTypeId="e8f43d04-ab61-4ecc-a825-9eb7b95943cf"/>
+  </producedTypes>
+  <name>пр_РаботыПроектаСооружений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работы проекта сооружений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.пр_РаботыПроектаСооружений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.пр_РаботыПроектаСооружений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>10</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>50</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinSubordination</codeSeries>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.пр_РаботыПроектаСооружений.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="0eb2ac54-99c6-46e8-92d5-0b2f266da756">
+    <name>НачалоПоЦелевомуПлану</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало по целевому плану</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80650004-0b9a-4f57-8792-a1a1b2fb7421">
+    <name>КонецПоЦелевомуПлану</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец по целевому плану</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1571d059-d739-4560-87b0-d7c35f4355f2">
+    <name>КодОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код оборудования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43dd5268-27ea-43dd-a8ef-f1ca56a4fb38">
+    <name>НомерБлока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер блока</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42399070-f3cb-41b8-a253-1260354ce70e">
+    <name>НПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>НПП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e1ba8b13-e95b-4c0d-b3d7-738adc62aff4">
+    <name>НачалоАктуально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало актуально</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f6a3975a-d30d-44a6-a88c-fc4b18020e48">
+    <name>КонецАктуально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец актуально</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bae30de6-ca62-4a97-b159-c9f090d88d9d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="11d5b850-69e5-4f71-a490-be594321c914">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

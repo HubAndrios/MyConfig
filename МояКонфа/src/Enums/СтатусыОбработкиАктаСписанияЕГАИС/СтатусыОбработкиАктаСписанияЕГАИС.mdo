@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e4f42cd-a042-4fac-8183-330105271ee0">
+  <producedTypes>
+    <refType typeId="3db229e0-a7df-424b-a408-d45f22ad247e" valueTypeId="15fe440e-c45f-43fb-aec1-c0fd9b043980"/>
+    <listType typeId="1740dc55-e074-4cfc-9295-22c304eafc85" valueTypeId="31ed9a68-f3d9-4f14-bc4c-122395ba9849"/>
+    <managerType typeId="32ed7af3-479e-416b-8c12-e75fe5c6634f" valueTypeId="82b74e8b-802f-4946-a366-3fe52431fa36"/>
+  </producedTypes>
+  <name>СтатусыОбработкиАктаСписанияЕГАИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обработки акта списания ЕГАИС</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9ff4967b-7b6a-4257-994d-ebd2a24eed73">
+    <name>Новый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e586093e-c250-4569-a2b5-af7ff9622322">
+    <name>ПередаетсяВЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передается в ЕГАИС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8a23fc75-3486-4e41-b078-be459e4d9999">
+    <name>ПереданВЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передан в ЕГАИС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6b901c1b-0e97-4394-b2da-fe150ee79707">
+    <name>ОшибкаПередачиВЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка передачи в ЕГАИС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d51fa5b5-c267-4714-bc7a-aff5e3be7330">
+    <name>ПередаетсяЗапросНаОтменуПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передается запрос на отмену проведения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f69fb2f5-8497-4763-9c1c-b5191ebad54b">
+    <name>ПереданЗапросНаОтменуПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передан запрос на отмену проведения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="059e42f8-5028-4c29-8439-7dbf261dbbfb">
+    <name>ОшибкаПередачиЗапросаНаОтменуПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка передачи запроса на отмену проведения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

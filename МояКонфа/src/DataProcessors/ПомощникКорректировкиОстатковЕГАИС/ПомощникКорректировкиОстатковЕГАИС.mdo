@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a3eecda-393d-48d5-92f4-749ff498f173">
+  <producedTypes>
+    <objectType typeId="54aa6a24-35ff-4063-b55e-f7909dc021b8" valueTypeId="5c493d14-f117-4822-9d36-4acf7dfef1e9"/>
+    <managerType typeId="ece4d82a-24a3-4b48-a063-5c695e806d47" valueTypeId="23a9d679-21af-4fac-9a74-bddc084070f2"/>
+  </producedTypes>
+  <name>ПомощникКорректировкиОстатковЕГАИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник корректировки остатков ЕГАИС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникКорректировкиОстатковЕГАИС.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="46ae91a9-ddd3-476d-8427-55d03b26e4ed">
+    <name>ОрганизацияЕГАИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация ЕГАИС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторОрганизацийЕГАИС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, остатки которой необходимо скорректировать</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="06be1822-bb41-4e35-b250-5e99febf365e">
+    <name>КорректироватьОстаткиНемаркируемойПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировать остатки немаркируемой продукции</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если в дальнейшем не планируется отражать продажи немаркируемой продукции в ЕГАИС, то флаг можно снять</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cdf11f35-f6bb-4d7b-8ad0-863c22eea131">
+    <name>ОстаткиВРегистре1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки в регистре №1</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОстаткиЕГАИС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ запроса остатков по регистру №1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ОрганизацияЕГАИС</name>
+      <field>DataProcessor.ПомощникКорректировкиОстатковЕГАИС.Attribute.ОрганизацияЕГАИС</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ВидДокумента</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыДокументовЕГАИС.EnumValue.ЗапросОстатковВРегистре1</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.СтатусОбработки</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыОбработкиОстатковЕГАИС.EnumValue.ПолученыОстатки</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Проведен</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="e698266b-7727-4d6c-ad3a-d6936aa27dfb">
+    <name>ОстаткиВРегистре2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки в регистре №2</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОстаткиЕГАИС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ запроса остатков по регистру №2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ОрганизацияЕГАИС</name>
+      <field>DataProcessor.ПомощникКорректировкиОстатковЕГАИС.Attribute.ОрганизацияЕГАИС</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ВидДокумента</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыДокументовЕГАИС.EnumValue.ЗапросОстатковВРегистре2</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.СтатусОбработки</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыОбработкиОстатковЕГАИС.EnumValue.ПолученыОстатки</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Проведен</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="fef7716a-a260-48ed-8ad3-0f01bd1bfe21">
+    <name>ДатаУчетныхОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата учетных остатков</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата получения учетных остатков. Если не заполнена, будут использованы текущие</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0359559d-6c81-4f3b-9fa1-ea356900dedb">
+    <name>ЭтоСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это склад</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что торговый объект является складским помещением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3c5c6df5-e86f-49a9-a878-e06a19f555d8">
+    <name>ЭтоТорговыйЗал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это торговый зал</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что торговый объект является торговым залом</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="6127bf94-1690-478e-aeeb-451f063e481b">
+    <producedTypes>
+      <objectType typeId="a5277506-764a-405b-abfc-9d08fda7b908" valueTypeId="776d17c4-d43b-440f-a9d7-800e198dfd2c"/>
+      <rowType typeId="e493d77f-2ed5-45a7-a6bd-6dadddbc004a" valueTypeId="4ff008b5-0488-48b2-86e1-725e13448a73"/>
+    </producedTypes>
+    <name>ТаблицаОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица остатков</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="cc564815-2138-47bf-ac43-83b9650ba5b4">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование алкогольной продукции</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </attributes>
+    <attributes uuid="0c89a5d8-12aa-4b67-9117-8b6fb615341c">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ХарактеристикаНоменклатуры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Характеристика номенклатуры</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ПомощникКорректировкиОстатковЕГАИС.TabularSection.ТаблицаОстатков.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </attributes>
+    <attributes uuid="8ac1ceef-c614-434d-b8a3-f994357fc27f">
+      <name>ПродаетсяВРозлив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продается в розлив</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Продукция, продаваемая в розлив, требует передачи операции вскрытия тары в ЕГАИС</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="eb700f84-1015-491c-9af3-133f246e0ce8">
+      <name>ОбъемДАЛ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объем в декалитрах</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>6</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объем в декалитрах, используемый в журнале учета объема розничной продажи алкогольной продукции</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="089511e3-b9ef-4246-9631-149eaa225aae">
+      <name>АлкогольнаяПродукция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Алкогольная продукция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КлассификаторАлкогольнойПродукцииЕГАИС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование алкогольной продукции</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </attributes>
+    <attributes uuid="43a78c9c-9885-4400-8e57-6728b85ba9b4">
+      <name>ТипПродукции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип продукции</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипыПродукцииЕГАИС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тип продукции: упакованная или неупакованная</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="def0d96e-25f8-4235-bd92-9c86f85a89c2">
+      <name>ОстатокРегистр1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистр №1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара по регистру №1</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="414eb99c-2973-4fbe-a835-08d3749163d4">
+      <name>ОстатокРегистр2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистр №2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара по регистру №2</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7199e625-b527-402b-9236-993b8b45ef15">
+      <name>ОстатокСклад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток на складе</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара на складе</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a4fd11be-84ce-433c-bcd7-ffcc78e1a68d">
+      <name>ОстатокТорговыйЗал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток в торговом зале</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара в торговом зале</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a516b393-6525-4e57-addd-32ece65d32c8">
+      <name>ОстатокСкладБазЕд</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток на складе (баз. ед.)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара на складе в базовых единицах</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="762f0230-c856-41a1-b4f4-b552dc9feb1a">
+      <name>ОстатокТорговыйЗалБазЕд</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток в торговом зале (баз. ед.)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара в торговом зале в базовых единицах</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="920289c5-5261-4041-8112-3d6d95e98ba2">
+    <producedTypes>
+      <objectType typeId="6f4f2c7b-7500-4c38-9fd1-0745a25e4cc4" valueTypeId="091cba41-c55b-4342-a860-38c605ee5667"/>
+      <rowType typeId="034f6e01-4984-483c-ab03-ff6f9b39a2d2" valueTypeId="3f69580e-4673-4d82-a10d-dbcb7120e232"/>
+    </producedTypes>
+    <name>ТаблицаКорректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица корректировки</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица с рассчитанным количеством для корректировки остатков</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="582829b9-5dfe-4576-96b7-7d27d584f13c">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование алкогольной продукции</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </attributes>
+    <attributes uuid="3966e82e-bc5e-48a4-b737-ba95097ddeea">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ХарактеристикаНоменклатуры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Характеристика номенклатуры</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ПомощникКорректировкиОстатковЕГАИС.TabularSection.ТаблицаКорректировки.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </attributes>
+    <attributes uuid="441cfbba-f72f-4835-a990-d40b1b45489f">
+      <name>АлкогольнаяПродукция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Алкогольная продукция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КлассификаторАлкогольнойПродукцииЕГАИС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование алкогольной продукции</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </attributes>
+    <attributes uuid="41df295b-6f0a-4367-88df-4f8b0c908084">
+      <name>ПродаетсяВРозлив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продается в розлив</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Продукция, продаваемая в розлив, требует передачи операции вскрытия тары в ЕГАИС</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d094d64a-7eb1-41db-a6a6-67fd3655bbfe">
+      <name>ОбъемДАЛ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объем в декалитрах</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>6</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объем в декалитрах, используемый в журнале учета объема розничной продажи алкогольной продукции</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="13a202f7-ea7b-4bba-9cbd-0b997b1da329">
+      <name>ОстатокСклад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток на складе</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара на складе</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="968358e1-c40a-42bd-b1b1-c3e62bc623a9">
+      <name>ОстатокТорговыйЗал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток в торговом зале</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара в торговом зале</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d48f29de-53a4-40a0-97a6-d29696fa4540">
+      <name>ОстатокРегистр1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистр №1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара по регистру №1</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6be35e2f-3d6f-498b-b4b3-e5bd8344d023">
+      <name>ОстатокРегистр2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистр №2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток товара по регистру №2</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="42868d54-2d20-41a9-8dcf-d8a672353834">
+      <name>ПередатьВРегистр2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Передать в регистр №2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество, требуемое для передачи (возврата) из регистра №2</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0e411e18-03d3-45e0-b8d6-6494b00d83d3">
+      <name>ПоставитьНаБалансВРегистр2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поставить на баланс в регистр №2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество, требуемое для постановки на баланс (списания) из регистра №2</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="97e27419-bc5e-4bd0-9c9d-b5332f06e0b1">
+      <name>ПоставитьНаБалансВРегистр1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поставить на баланс в регистр №1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество, требуемое для постановки на баланс (списания) из регистра №1</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="eac5c238-1eed-45d4-aea4-086d876f567f">
+    <producedTypes>
+      <objectType typeId="4218b147-ea86-4467-a40d-84eea3178eee" valueTypeId="68c74fea-5cfb-4a87-9612-4103c7d46c91"/>
+      <rowType typeId="e7a2259c-8432-45b0-b4b1-7979978e19ae" valueTypeId="6ff4ba2f-70b8-40f7-ba20-a197c7bc404c"/>
+    </producedTypes>
+    <name>СозданныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Созданные документы</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Созданные документы корректировки остатков по регистрам ЕГАИС</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2bbc7f22-a721-4384-8b93-e9ddda74d709">
+      <name>ДокументСсылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ ссылка</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.АктПостановкиНаБалансЕГАИС</types>
+        <types>DocumentRef.АктСписанияЕГАИС</types>
+        <types>DocumentRef.ПередачаВРегистр2ЕГАИС</types>
+        <types>DocumentRef.ВозвратИзРегистра2ЕГАИС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Документ корректировки остатков</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="23bc3499-417d-427f-9e15-06ead3de13ad">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

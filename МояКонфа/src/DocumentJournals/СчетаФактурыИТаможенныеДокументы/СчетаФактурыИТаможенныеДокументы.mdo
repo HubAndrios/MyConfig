@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cca7b88d-ba07-4c16-aff1-ed7d9ef020f3">
+  <producedTypes>
+    <selectionType typeId="0d337ac1-0623-4fd1-8e23-b5008d390ab8" valueTypeId="452d662e-defb-47a2-8130-8d8f171a0f46"/>
+    <listType typeId="965bfc2a-c728-425b-923a-1b5cc4f30e4b" valueTypeId="e8b8fc9b-f01b-4549-afba-08ec54bce29a"/>
+    <managerType typeId="5c20d72f-1bb3-4301-8ede-3c9b4ff4e66f" valueTypeId="7194f7a2-c9c1-46ef-8877-56b4987ce136"/>
+  </producedTypes>
+  <name>СчетаФактурыИТаможенныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета-фактуры и таможенные документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.СчетаФактурыИТаможенныеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.СчетФактураВыданный</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураВыданныйАванс</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураКомиссионеру</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураКомитента</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураНалоговыйАгент</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураНаНеподтвержденнуюРеализацию0</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураПолученный</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураПолученныйАванс</registeredDocuments>
+  <registeredDocuments>Document.ЗаявлениеОВвозеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ТаможеннаяДекларацияИмпорт</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="2b123d3c-dd28-4124-822f-01723dc6e307">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЗаявлениеОВвозеТоваров.Attribute.Организация</references>
+    <references>Document.СчетФактураВыданный.Attribute.Организация</references>
+    <references>Document.СчетФактураВыданныйАванс.Attribute.Организация</references>
+    <references>Document.СчетФактураКомиссионеру.Attribute.Организация</references>
+    <references>Document.СчетФактураКомитента.Attribute.Организация</references>
+    <references>Document.СчетФактураНалоговыйАгент.Attribute.Организация</references>
+    <references>Document.СчетФактураНаНеподтвержденнуюРеализацию0.Attribute.Организация</references>
+    <references>Document.СчетФактураПолученный.Attribute.Организация</references>
+    <references>Document.СчетФактураПолученныйАванс.Attribute.Организация</references>
+    <references>Document.ТаможеннаяДекларацияИмпорт.Attribute.Организация</references>
+  </columns>
+  <columns uuid="491068e0-87ad-4545-9b11-d99e26dff17e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ЗаявлениеОВвозеТоваров.Attribute.Комментарий</references>
+    <references>Document.СчетФактураВыданныйАванс.Attribute.Комментарий</references>
+    <references>Document.СчетФактураКомитента.Attribute.Комментарий</references>
+    <references>Document.СчетФактураНаНеподтвержденнуюРеализацию0.Attribute.Комментарий</references>
+    <references>Document.СчетФактураПолученныйАванс.Attribute.Комментарий</references>
+    <references>Document.ТаможеннаяДекларацияИмпорт.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="2cc0af21-6e0b-469d-801e-f2863180f661">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ЗаявлениеОВвозеТоваров.Attribute.Контрагент</references>
+    <references>Document.СчетФактураВыданный.Attribute.Контрагент</references>
+    <references>Document.СчетФактураВыданныйАванс.Attribute.Контрагент</references>
+    <references>Document.СчетФактураКомиссионеру.Attribute.Комиссионер</references>
+    <references>Document.СчетФактураКомитента.Attribute.Комитент</references>
+    <references>Document.СчетФактураНалоговыйАгент.Attribute.Поставщик</references>
+    <references>Document.СчетФактураНаНеподтвержденнуюРеализацию0.Attribute.Контрагент</references>
+    <references>Document.СчетФактураПолученный.Attribute.Контрагент</references>
+    <references>Document.СчетФактураПолученныйАванс.Attribute.Контрагент</references>
+    <references>Document.ТаможеннаяДекларацияИмпорт.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="4b9eb4b8-d29b-482e-9be5-956ff72dcdc3">
+    <name>НомерИсправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер исправления</value>
+    </synonym>
+    <references>Document.СчетФактураВыданный.Attribute.НомерИсправления</references>
+    <references>Document.СчетФактураКомиссионеру.Attribute.НомерИсправления</references>
+    <references>Document.СчетФактураКомитента.Attribute.НомерИсправления</references>
+    <references>Document.СчетФактураПолученный.Attribute.НомерИсправления</references>
+  </columns>
+  <columns uuid="3fa76d02-5499-4d62-93a5-76ab7d13c8c3">
+    <name>Исправление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправление</value>
+    </synonym>
+    <references>Document.СчетФактураВыданный.Attribute.Исправление</references>
+    <references>Document.СчетФактураКомиссионеру.Attribute.Исправление</references>
+    <references>Document.СчетФактураКомитента.Attribute.Исправление</references>
+    <references>Document.СчетФактураПолученный.Attribute.Исправление</references>
+  </columns>
+  <columns uuid="ed7063d6-3499-4285-a51d-a7cf4597eae3">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <references>Document.СчетФактураВыданный.Attribute.ДокументОснование</references>
+    <references>Document.СчетФактураВыданныйАванс.Attribute.ДокументОснование</references>
+    <references>Document.СчетФактураКомиссионеру.Attribute.ДокументОснование</references>
+    <references>Document.СчетФактураНалоговыйАгент.Attribute.ДокументОснование</references>
+    <references>Document.СчетФактураНаНеподтвержденнуюРеализацию0.Attribute.ДокументОснование</references>
+    <references>Document.СчетФактураПолученныйАванс.Attribute.ДокументОснование</references>
+  </columns>
+  <columns uuid="2e9a7771-0665-4ee8-ac32-49893a60924e">
+    <name>СчетФактураОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет фактура основание</value>
+    </synonym>
+    <references>Document.СчетФактураВыданный.Attribute.СчетФактураОснование</references>
+    <references>Document.СчетФактураКомиссионеру.Attribute.СчетФактураОснование</references>
+    <references>Document.СчетФактураПолученный.Attribute.СчетФактураОснование</references>
+  </columns>
+  <forms uuid="4fe091d9-3536-42a5-ad7a-63fc5a547c72">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счета-фактуры и таможенные документы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e19dbe9a-3c8d-4989-9a5f-50185c0ec1ce">
+  <producedTypes>
+    <managerType typeId="963037e6-8397-4569-b2c6-cfa5077f2e2a" valueTypeId="5ce111b5-dce5-420f-a299-1c3069ecb7b2"/>
+    <valueManagerType typeId="aa570c33-1a33-43ab-b8b0-8b432ddb8b97" valueTypeId="a34df856-6032-484f-a321-2948127b51d1"/>
+    <valueKeyType typeId="937be5a0-a3b1-5542-8669-6a0d0aa5a761" valueTypeId="14818ecc-eefe-5b61-8d7e-4e133397ce2e"/>
+  </producedTypes>
+  <name>ВыполняетсяСверткаДвиженийПоРезервамТоваровОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполняется свертка движений по резервам товаров организаций</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

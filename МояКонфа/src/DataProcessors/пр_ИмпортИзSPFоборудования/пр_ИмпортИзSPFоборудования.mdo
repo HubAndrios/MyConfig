@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7feb6a12-a86a-47c7-b032-7ab4f73ebc88">
+  <producedTypes>
+    <objectType typeId="6cecb2e1-15d5-4362-bd51-874df5cf630b" valueTypeId="b268cad1-ca96-45c2-b4cc-9dafb7b48861"/>
+    <managerType typeId="be5bd439-3595-4beb-bedd-8a4e58712971" valueTypeId="f2885d31-db1e-4733-9d58-de33fd22ff85"/>
+  </producedTypes>
+  <name>пр_ИмпортИзSPFоборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Импорт из SPF оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.пр_ИмпортИзSPFоборудования.Form.Форма</defaultForm>
+  <forms uuid="05c7a4b8-ecdc-4f17-8810-dda80b15c8c3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3a9959c3-43fa-4325-bdc0-039543e9b400">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

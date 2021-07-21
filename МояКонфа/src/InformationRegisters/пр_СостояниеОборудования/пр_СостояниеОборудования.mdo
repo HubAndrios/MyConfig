@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cde927e6-f198-45b8-b86b-cfff18f2adf2">
+  <producedTypes>
+    <selectionType typeId="2abf9ef9-853c-4d96-8be7-dce7fc6ae1ee" valueTypeId="1d12d8dd-81ed-4997-aa98-7390bcc0866c"/>
+    <listType typeId="0a2f2ee2-bf8d-4519-928a-6b82a87bf85d" valueTypeId="820d7510-b9db-48b7-8b92-66c5026b1086"/>
+    <managerType typeId="73fba92a-2405-45ad-83f6-503ec7717824" valueTypeId="21eda8c6-6a5c-4b90-95e5-ea3142bd2278"/>
+    <recordSetType typeId="f587ee20-882e-4071-8ae5-114bb1618a65" valueTypeId="7fd0f868-c274-42b2-b37a-41018f67b2e1"/>
+    <recordKeyType typeId="b721b381-fb69-4643-aa8c-4a360480a91e" valueTypeId="e3048bab-41c2-4e5c-ba2c-25049e83a6f5"/>
+    <recordType typeId="4f41d273-55a4-4049-9e39-e07adcb17242" valueTypeId="2c9cf730-f764-45ff-ae2b-83687bdb6af1"/>
+    <recordManagerType typeId="af5b95bb-0298-45f8-bf60-dfb2bf4620ee" valueTypeId="1990de77-76e8-45e1-bdca-655c575dfc08"/>
+  </producedTypes>
+  <name>пр_СостояниеОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Cостояние оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceFirst>true</enableTotalsSliceFirst>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="46a4688f-8ff9-4fd2-a3bf-bbcd99ec5809">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЛота</types>
+      <types>EnumRef.СтатусыСогласований</types>
+      <types>EnumRef.СтатусыДоговора</types>
+      <types>EnumRef.СтатусыЗаявкиТАЕК</types>
+      <types>EnumRef.СтатусыПередачаВмонтаж</types>
+      <types>EnumRef.СтатусыТУТЗ</types>
+      <types>EnumRef.СтатусыАктаВК</types>
+      <types>EnumRef.СтатусыЛогистики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="865c5a7b-7dc8-4f7b-9774-920235945f8c">
+    <name>НетНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нет номенклатуры</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="46959c2b-3ffc-41ce-a2ea-2ad568da38fb">
+    <name>НесоответствиеНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Несоответствие номенклатуры</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="fdc979e9-c194-49ed-9d53-b08885113959">
+    <name>НесоответствиеДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Несоответствие документа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="3011e24e-991f-4a3e-bece-1f20caff59db">
+    <name>ВыходЗаГраничныеУсловия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выход за граничные условия</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="c4904b28-cdd3-44ae-818b-f80d2a595ac3">
+    <name>ДатаПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата поставки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a12f6de5-76d8-43b7-b341-eeb2bab12c3b">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cc581fc0-4fd1-44c4-8804-07f2f41b1b6b">
+    <name>КодОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код оборудования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

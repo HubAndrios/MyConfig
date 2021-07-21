@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5150d090-4009-4cb8-9619-8a05bec31890">
+  <producedTypes>
+    <objectType typeId="b7c34f27-4483-41e4-9c79-02573d065880" valueTypeId="9cb148aa-ee60-4a9b-9def-66312c4711cb"/>
+    <managerType typeId="7d3f012d-d03f-448e-968c-6cb6f6e5612d" valueTypeId="072d7481-664c-4639-943f-16ed735a6f36"/>
+  </producedTypes>
+  <name>ГотовностьОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Готовность оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГотовностьОборудования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2e7f46e3-7be5-4396-9324-ef64bf4187ac">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="f85c1496-c208-4ffc-8d3d-ed6acb75f22e">
+    <name>ГотовностьОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Готовность оборудования</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Номенклатура</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

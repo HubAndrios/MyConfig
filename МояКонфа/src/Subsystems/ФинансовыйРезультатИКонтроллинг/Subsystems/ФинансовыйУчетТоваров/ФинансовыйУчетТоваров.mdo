@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="579491e3-ba50-4074-b703-f0eb030af670">
+  <name>ФинансовыйУчетТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товародвижение между организациями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ОтчетПоКомиссииМеждуОрганизациями</content>
+  <content>Document.ПередачаТоваровМеждуОрганизациями</content>
+  <content>faeb5275-f274-4daa-9f86-f61772fb448d</content>
+  <content>Report.КонтрольПередачТоваровМеждуОрганизациями</content>
+  <content>Report.РасчетыМеждуОрганизациями</content>
+  <content>Report.ПродажиМеждуОрганизациями</content>
+  <content>Document.ВозвратТоваровМеждуОрганизациями</content>
+  <content>DataProcessor.ПечатьАктОбОказанииУслуг</content>
+  <content>Constant.ПеремещатьТоварыДругихОрганизаций</content>
+  <content>Report.ВедомостьПоТоварамОрганизаций</content>
+  <content>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании</content>
+  <content>DataProcessor.ПомощникИсправленияОстатковТоваровОрганизаций</content>
+  <content>FunctionalOption.ИспользоватьДоговорыМеждуОрганизациями</content>
+  <content>DefinedType.ОбъектРасчетов</content>
+  <content>Constant.ИспользоватьДоговорыМеждуОрганизациями</content>
+  <content>Catalog.ДоговорыМеждуОрганизациями</content>
+  <content>Enum.ТипыДоговоровМеждуОрганизациями</content>
+  <content>DataProcessor.ЖурналДокументовИнтеркампани</content>
+  <content>Document.КорректировкаОбособленногоУчетаЗапасов</content>
+  <content>DataProcessor.ПанельОбменСЕГАИС</content>
+  <content>InformationRegister.НастройкаПередачиТоваровМеждуОрганизациями</content>
+  <parentSubsystem>Subsystem.ФинансовыйРезультатИКонтроллинг</parentSubsystem>
+</mdclass:Subsystem>

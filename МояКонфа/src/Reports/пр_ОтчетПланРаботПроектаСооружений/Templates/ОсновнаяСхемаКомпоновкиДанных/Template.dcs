@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяПредопределенныхДанных</dataPath>
+			<field>ИмяПредопределенныхДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Предопределенный</dataPath>
+			<field>Предопределенный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоГруппа</dataPath>
+			<field>ЭтоГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НПП</dataPath>
+			<field>НПП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоПоЦелевомуПлану</dataPath>
+			<field>НачалоПоЦелевомуПлану</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонецПоЦелевомуПлану</dataPath>
+			<field>КонецПоЦелевомуПлану</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонецАктуально</dataPath>
+			<field>КонецАктуально</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодОборудования</dataPath>
+			<field>КодОборудования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерБлока</dataPath>
+			<field>НомерБлока</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоАктуально</dataPath>
+			<field>НачалоАктуально</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	пр_РаботыПроектаСооружений.Ссылка КАК Ссылка,
+	пр_РаботыПроектаСооружений.ВерсияДанных КАК ВерсияДанных,
+	пр_РаботыПроектаСооружений.ПометкаУдаления КАК ПометкаУдаления,
+	пр_РаботыПроектаСооружений.Родитель КАК Родитель,
+	пр_РаботыПроектаСооружений.ЭтоГруппа КАК ЭтоГруппа,
+	пр_РаботыПроектаСооружений.Код КАК Код,
+	пр_РаботыПроектаСооружений.Наименование КАК Наименование,
+	пр_РаботыПроектаСооружений.НачалоПоЦелевомуПлану КАК НачалоПоЦелевомуПлану,
+	пр_РаботыПроектаСооружений.КонецПоЦелевомуПлану КАК КонецПоЦелевомуПлану,
+	пр_РаботыПроектаСооружений.КодОборудования КАК КодОборудования,
+	пр_РаботыПроектаСооружений.НомерБлока КАК НомерБлока,
+	пр_РаботыПроектаСооружений.НПП КАК НПП,
+	пр_РаботыПроектаСооружений.НачалоАктуально КАК НачалоАктуально,
+	пр_РаботыПроектаСооружений.КонецАктуально КАК КонецАктуально,
+	пр_РаботыПроектаСооружений.Предопределенный КАК Предопределенный,
+	пр_РаботыПроектаСооружений.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+ИЗ
+	Справочник.пр_РаботыПроектаСооружений КАК пр_РаботыПроектаСооружений
+
+СГРУППИРОВАТЬ ПО
+	пр_РаботыПроектаСооружений.Ссылка,
+	пр_РаботыПроектаСооружений.ВерсияДанных,
+	пр_РаботыПроектаСооружений.ПометкаУдаления,
+	пр_РаботыПроектаСооружений.Родитель,
+	пр_РаботыПроектаСооружений.ЭтоГруппа,
+	пр_РаботыПроектаСооружений.Код,
+	пр_РаботыПроектаСооружений.Наименование,
+	пр_РаботыПроектаСооружений.НачалоПоЦелевомуПлану,
+	пр_РаботыПроектаСооружений.КонецПоЦелевомуПлану,
+	пр_РаботыПроектаСооружений.КодОборудования,
+	пр_РаботыПроектаСооружений.НомерБлока,
+	пр_РаботыПроектаСооружений.НПП,
+	пр_РаботыПроектаСооружений.НачалоАктуально,
+	пр_РаботыПроектаСооружений.КонецАктуально,
+	пр_РаботыПроектаСооружений.Предопределенный,
+	пр_РаботыПроектаСооружений.ИмяПредопределенныхДанных</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Наименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоАктуально</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонецАктуально</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоПоЦелевомуПлану</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонецПоЦелевомуПлану</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Детализированный график проекта сооружения</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Родитель</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Родитель</dcsset:field>
+								<dcsset:groupType>Hierarchy</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

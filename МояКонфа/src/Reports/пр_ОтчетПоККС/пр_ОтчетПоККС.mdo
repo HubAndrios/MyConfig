@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8665f1af-790b-48f0-8869-f6e1bfe2b376">
+  <producedTypes>
+    <objectType typeId="7cb03101-39fc-496b-9035-9264c59b00bb" valueTypeId="02cc80c3-1f95-4a10-82e4-66be7cccb090"/>
+    <managerType typeId="f0bcc12e-048c-4ca6-b864-553379f397cf" valueTypeId="73b9614f-0299-485e-8c44-31aeb36a6f6c"/>
+  </producedTypes>
+  <name>пр_ОтчетПоККС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по ККС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.пр_ОтчетПоККС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3e2b7c96-cc3e-42f6-b716-74d741e4f22d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

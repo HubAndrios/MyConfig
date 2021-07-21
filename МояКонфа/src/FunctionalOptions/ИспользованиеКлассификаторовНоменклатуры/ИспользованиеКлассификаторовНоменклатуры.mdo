@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd927c8a-4fd0-43e7-8bef-f6cbaf1b7419">
+  <name>ИспользованиеКлассификаторовНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование классификаторов номенклатуры</value>
+  </synonym>
+  <location>Constant.ИспользованиеКлассификаторовНоменклатуры</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ВидыНоменклатуры.Attribute.КодОКВЭД</content>
+  <content>Catalog.ВидыНоменклатуры.Attribute.КодТНВЭД</content>
+  <content>Catalog.Номенклатура.Attribute.КодОКВЭД</content>
+  <content>Catalog.Номенклатура.Attribute.КодОКП</content>
+  <content>Catalog.Номенклатура.Attribute.КодТНВЭД</content>
+  <content>CommonForm.ДобавлениеЭлементовВКлассификатор</content>
+  <content>Catalog.КлассификаторТНВЭД</content>
+  <content>Catalog.ОбщероссийскийКлассификаторПродукции</content>
+</mdclass:FunctionalOption>

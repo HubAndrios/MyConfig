@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86de6af1-0dbd-4be1-85b1-8b95d69dbf16">
+  <producedTypes>
+    <objectType typeId="14b96507-6fc1-4a1c-a226-e138cb843967" valueTypeId="39f37cae-ea98-4d85-8b48-ab44c973af8f"/>
+    <managerType typeId="d64ec006-2ee4-42fd-8419-379eea671db4" valueTypeId="d82a4dda-3855-4e08-ac12-906d95d3672d"/>
+  </producedTypes>
+  <name>пр_ИмпортЗаявокВТАЕК2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Импорт заявок в ТАЕК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.пр_ИмпортЗаявокВТАЕК2.Form.Форма</defaultForm>
+  <forms uuid="d201c70c-9a94-4f7f-9ead-3013ed05c102">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

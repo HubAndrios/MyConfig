@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78c03293-e6e0-414d-aa4e-cf93998836ad">
+  <producedTypes>
+    <refType typeId="80495225-bba9-468c-a2b1-445ab29ce11b" valueTypeId="11c063bf-ed1e-4cb2-a5fb-41943edb2fa4"/>
+    <listType typeId="26f2d5ca-c20a-4752-90cc-6ec0f93d46bc" valueTypeId="db659244-5543-4229-bf1a-784ec3fc6d9b"/>
+    <managerType typeId="07f7ee3f-ea1a-4071-bbc0-a02324ed5d52" valueTypeId="d5c2d5b4-25e8-4acd-8b0f-f71908f2375d"/>
+  </producedTypes>
+  <name>ВидыДокументовЕГАИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды документов ЕГАИС</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d2f12fc6-d39d-4d56-9402-f00627a7d389">
+    <name>АктОтказаОтТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт отказа от ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="954d50bd-3b75-46bd-a85b-9fe38c67fc4e">
+    <name>АктПодтвержденияТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт подтверждения ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4b7e801a-8fe0-4ef5-93e1-28c710279a5f">
+    <name>АктПостановкиНаБалансВРегистр1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт постановки на баланс в регистр №1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="817ddd2e-ccb9-40a7-ada0-a82a792e1aab">
+    <name>АктПостановкиНаБалансВРегистр2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт постановки на баланс в регистр №2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e2c3b763-27cf-4fe0-807c-81bf3277df59">
+    <name>АктРасхожденийТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт расхождений ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4b340c83-af9f-4be3-84eb-e005824e9d9e">
+    <name>АктСписанияИзРегистра1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт списания из регистра №1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2e9eee3f-30c5-498e-8860-720fd5c5732a">
+    <name>АктСписанияИзРегистра2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт списания из регистра №2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c53d81f2-2132-4327-b622-ca042f3d96fd">
+    <name>ВозвратИзРегистра2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат из регистра №2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f360c229-5003-47ef-b303-670c8a7441b4">
+    <name>ЗапросАлкогольнойПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос алкогольной продукции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f410b2e8-5d1d-4f90-99e6-e37eb76f6afb">
+    <name>ЗапросНаОтменуПроведенияАктаПостановкиНаБаланс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на отмену проведения акта постановки на баланс</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="22ace7b3-9146-4c3d-b5ca-ab9a5d8e29f8">
+    <name>ЗапросНаОтменуПроведенияАктаСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на отмену проведения акта списания</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="448fd524-bc11-4788-9cff-860325c94c16">
+    <name>ЗапросНаОтменуПроведенияТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на отмену проведения ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca22baf1-c647-4e53-b339-686eafc70095">
+    <name>ЗапросОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос организаций</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3096868c-adcc-433b-88db-98cc633f50a5">
+    <name>ЗапросОстатковВРегистре1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос остатков в регистре №1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8ec7c268-43a9-430a-bf25-b93bdf92be9a">
+    <name>ЗапросОстатковВРегистре2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос остатков в регистре №2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b440d813-6032-407e-b042-c7cdc67d0e66">
+    <name>ЗапросСправки1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос справки &quot;1&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="01a8ac2a-958b-40ff-b1b4-be1e50ba94cf">
+    <name>ЗапросСправки2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос справки &quot;2&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="448dc440-e727-4cb1-bedc-9a9848adaf94">
+    <name>ЗапросТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c1f78773-b38d-484e-ba1d-495479c06aff">
+    <name>ИнформацияОФорматеОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о формате обмена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="821a58d9-d6ae-4354-81ee-08c10a2cfea9">
+    <name>КвитанцияПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция проведения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c826a2fb-61f2-47ad-b32c-93bf8aaba6be">
+    <name>КвитанцияФиксации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квитанция фиксации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8c0c60ea-db4c-4e31-b3b8-5413bef1df9a">
+    <name>ОтветАлкогольнаяПродукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ на запрос алкогольной продукции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c473b6fa-5c55-4ac1-a4a1-59c8e6d4a258">
+    <name>ОтветОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ на запрос организаций</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0b13714c-ea7d-4b45-a1de-d6619d2d68d0">
+    <name>ОтветОстаткиВРегистре1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ на запрос остатков в регистре №1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="21d3f3eb-77d2-4896-8bf0-84e10cd78883">
+    <name>ОтветОстаткиВРегистре2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ на запрос остатков в регистре №2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="93250382-a595-4d73-9b20-7bf8257251e4">
+    <name>ОтказОтАктаРасхожденийТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказ от акта расхождений ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d2fe0e46-04fd-4768-9475-4d6dd48c8b9c">
+    <name>ОтказОтЗапросаНаОтменуПроведенияТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказ от запроса на отмену проведения ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3998b3b8-f259-4eaa-b8cb-2c36b091cc84">
+    <name>ПередачаВРегистр2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача в регистр №2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c9f163cc-4c45-4403-86a5-69cda0bac6c2">
+    <name>ПодтверждениеАктаРасхожденийТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение акта расхождений ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="012f488f-8480-4a23-becd-b745ca5e6cee">
+    <name>ПодтверждениеЗапросаНаОтменуПроведенияТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение запроса на отмену проведения ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="01670f71-d0f3-4ac3-8fa0-59c0a4d2df87">
+    <name>РегистрацияСправокПоТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация справок по ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c0831abd-5283-4678-9268-24b890d2d51c">
+    <name>Справка1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка &quot;1&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebfe9bb8-f72c-4bb5-a523-0fbde2c903f2">
+    <name>Справка2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка &quot;2&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2598451d-1a74-409b-a258-1928fb529d30">
+    <name>ТТН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТТН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebda2047-1d94-4b58-9272-4b6dad28aa93">
+    <name>ЧекККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чек ККМ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

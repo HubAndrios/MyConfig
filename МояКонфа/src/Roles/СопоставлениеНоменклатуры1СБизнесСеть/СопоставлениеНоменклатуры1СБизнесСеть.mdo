@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="784a26c0-01ee-4b43-9171-459d2e3ba368">
+  <name>СопоставлениеНоменклатуры1СБизнесСеть</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сопоставление номенклатуры в 1С:Бизнес-сеть</value>
+  </synonym>
+</mdclass:Role>

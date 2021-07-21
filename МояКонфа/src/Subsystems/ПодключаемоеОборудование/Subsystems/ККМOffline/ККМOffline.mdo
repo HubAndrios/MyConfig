@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d4adb1a-3264-4af6-9138-16516509d245">
+  <name>ККМOffline</name>
+  <synonym>
+    <key>ru</key>
+    <value>ККМ Offline</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>XDTOPackage.EquipmentService_1_0_0_6</content>
+  <content>XDTOPackage.EquipmentService</content>
+  <content>CommonForm.ФормаНастройки1СККМOffline</content>
+  <content>CommonForm.ФормаНастройкиАтолККМOffline</content>
+  <content>CommonForm.ФормаНастройкиШтрихМККМOffline</content>
+  <content>CommonModule.ПодключаемоеОборудование1СККМOfflineВызовСервера</content>
+  <content>CommonModule.ПодключаемоеОборудование1СККМOfflineКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеАтолККМOfflineКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеШтрихМККМOfflineКлиент</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеККМOffline16</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеККМOffline32</content>
+  <content>CommonModule.МенеджерОборудованияСервисы</content>
+  <content>CommonModule.МенеджерОборудованияСервисыКлиентСервер</content>
+  <content>CommonModule.МенеджерОборудованияСервисыПереопределяемый</content>
+  <content>XDTOPackage.EquipmentService_1_0_0_7</content>
+  <content>CommonModule.МенеджерОборудованияСервисыВызовСервера</content>
+  <content>CommonModule.ПодключаемоеОборудование1СЭвоторКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудование1СЭвоторВызовСервера</content>
+  <content>CommonForm.ФормаНастройки1СЭвоторККМOffline</content>
+  <parentSubsystem>Subsystem.ПодключаемоеОборудование</parentSubsystem>
+</mdclass:Subsystem>

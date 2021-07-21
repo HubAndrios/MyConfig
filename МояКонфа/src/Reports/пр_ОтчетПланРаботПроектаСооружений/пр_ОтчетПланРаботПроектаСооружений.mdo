@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dcfb613b-3b60-48a8-94b7-d52caffbaf1d">
+  <producedTypes>
+    <objectType typeId="a43bc3ea-66dd-4eaa-8b42-390849c769e0" valueTypeId="0db491b9-ddc8-4596-8d4e-f46e287b6fa8"/>
+    <managerType typeId="1254a6b9-82a3-4866-ad2f-19310cc3f680" valueTypeId="1df77a4a-4775-4741-8b57-c8d9c25999ad"/>
+  </producedTypes>
+  <name>пр_ОтчетПланРаботПроектаСооружений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет план работ проекта сооружений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.пр_ОтчетПланРаботПроектаСооружений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9f6e584e-0c02-4756-a413-fba02b6ee154">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
